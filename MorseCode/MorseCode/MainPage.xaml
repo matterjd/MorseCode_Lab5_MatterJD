@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MorseCode.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="lblInput"
+           Text="Dots and Dashes"           
+           FontAttributes="Bold"
+           FontSize="Large"
+           FontFamily="San Fransisco"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label x:Name="lblResult"
+               FontAttributes="Bold"
+               FontSize="Large"
+               FontFamily="San Fransisco"
+               Text="Letters and Words"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        <Button x:Name="btnDot"
+                Text="."
+                FontAttributes="Bold"
+                FontSize="Large"
+                FontFamily="San Fransisco"
+                Clicked="BtnDot_Clicked" />
+        <Button x:Name="btnDash"
+                Text="-"
+                FontAttributes="Bold"
+                FontSize="Large"
+                FontFamily="San Fransisco"
+                Clicked="BtnDash_Clicked" />
+        <Button x:Name="btnSpace"                
+                Text="Space"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                FontFamily="San Fransisco"
+                Clicked="BtnSpace_Clicked" />
+    </StackLayout>
+
+</ContentPage>
